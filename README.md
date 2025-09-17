@@ -1,45 +1,32 @@
 
-sahara (Flutter + Firebase) — Prototype
+sahara (Flutter + nodejs+postgresql) — Prototype
 - **Mood**: Emoji-based mood + AI-styled chat
 - **Match**: Tinder-like swipe to find peers with similar mood
 - **Material**: Roadmap/timeline to reduce stress
 - **Maps**: Nearby doctors, yoga teachers, psychologists
 - **Mission**: Mini tasks (yoga, walk, diet) with progress
 
+  ##QUICK UNDERSTANDING OF THIS REPO:
+  1.THE BACKEND OF THIS PROJECT(SAHARA) WAS DEPLOYED ON GOOGLE CLOUD RUN
+  2.THAT BACKEND URL IS THEN INTEGRATED IN END POINTS,THAT WILL MAKE A REQUEST TO BACKEND
+  3.FOR FRONTED(FLUTTER) TO CALL YOUR BACKEND EITHER RUN USING "FLUTTER RUN -D CHROME" IN YOUR TERMINAL OR USE ANDROID EMULATOR
+  4.MAKE SURE YOU INTEGRATED EVERY API KEY FOR SMOOTH-RUN
+
+##BEFORE INSTALLING ALL THE PREREQUISITES MAKE SURE YOU DID ADD THE ENV VARIABLES WHICH ARE NECCESARY
+1.IN .ENV FILE ADD YOUR GEMINI API KEY,WHICH YOU CAN GET FROM GOOGLE AI STUDIO
+2.IN .ENV FILE ADD YOUR SUPABASE POSTGRESQL LINK AND ANON KEY
+3.IN WEB/INDEX.HTML ADD YOUR GOOGLE MAPS API
 
 
-## Firebase Setup (quick)
-1. Create a Firebase project.
-2. Enable **Authentication** (Email/Password + Anonymous).
-3. Enable **Cloud Firestore** (test mode for demo).
-4. Download `google-services.json` → place at `android/app/`.
-5. Download `GoogleService-Info.plist` → place at `ios/Runner/`.
-6. Update your `applicationId`/`bundleId` in the Firebase console if needed.
+## RUN ON YOUR LOCAL SERVER (quick)
+1.CLONE THIS REPO TO YOUR IDE(VSCODE)
+2. INSTALLL THE REQUIREMENTS
+3. FOR BACKEND DEPENDENCIES DO npm install,which will download your node-modules.
+4. FOR FRONTEND YOU NEED TO HAVE FLUTTER INSTALLED AND CONFIGURED ON TERMINAL
+5. DO "flutter create ." 
+6. DO "flutter pub get"
+7. DO "flutter run -d chrome" THIS IS ONLY FOR PROTOTYPE, FOR PRODUCTION YOU NEED TO BE INSTALLING THE ANDROID EMULATOR OR YOU CAN RUN VIA USB-C
 
-This app **will still run without Firebase** in *mock mode*. When Firebase init fails, it uses local in-memory data for demo.
 
-## Maps
-- Add an Android Maps API key in `AndroidManifest.xml` after running `flutter create .`.
-- iOS requires adding the key in `AppDelegate` Info.plist.
 
-## Structure
-```
-lib/
-  main.dart
-  theme.dart
-  services/
-    firebase_service.dart
-  screens/
-    login_screen.dart
-    details_screen.dart
-    home_screen.dart
-    mood_screen.dart
-    match_screen.dart
-    material_screen.dart
-    maps_screen.dart
-    mission_screen.dart
-    chat_screen.dart
-  widgets/
-    mood_emoji_picker.dart
-    mission_task_tile.dart
-```
+
