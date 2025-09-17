@@ -1,21 +1,12 @@
 
-# 5M Stress Relief (Flutter + Firebase) — Prototype
-
-A hackathon-ready prototype for your **5M framework**:
+sahara (Flutter + Firebase) — Prototype
 - **Mood**: Emoji-based mood + AI-styled chat
 - **Match**: Tinder-like swipe to find peers with similar mood
 - **Material**: Roadmap/timeline to reduce stress
 - **Maps**: Nearby doctors, yoga teachers, psychologists
 - **Mission**: Mini tasks (yoga, walk, diet) with progress
 
-> ⚠️ This ZIP ships without the heavy `android/` and `ios/` folders.
-> Generate them once with Flutter:
 
-```bash
-flutter create .
-flutter pub get
-flutter run
-```
 
 ## Firebase Setup (quick)
 1. Create a Firebase project.
