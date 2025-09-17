@@ -28,5 +28,7 @@ sahara (Flutter + nodejs+postgresql) — Prototype
 7. DO "flutter run -d chrome" THIS IS ONLY FOR PROTOTYPE, FOR PRODUCTION YOU NEED TO BE INSTALLING THE ANDROID EMULATOR OR YOU CAN RUN VIA USB-C
 
 
+<img width="1919" height="905" alt="Screenshot 2025-09-17 215445" src="https://github.com/user-attachments/assets/f2484d6c-2926-4304-b772-700ef1bac9a3" />
+
 
 
